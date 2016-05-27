@@ -1,0 +1,104 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 16/02/03 14:58
+Description: Rendering item
+
+java.lang.ArrayIndexOutOfBoundsException
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:571)
+
+-- Item being rendered --
+Details:
+	Item Type: extrabiomes.items.ItemCustomFence@23e66503
+	Item Aux: 9
+	Item NBT: null
+	Item Foil: false
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:571)
+	at net.minecraft.client.gui.GuiIngame.func_73832_a(GuiIngame.java:955)
+	at net.minecraftforge.client.GuiIngameForge.renderHotbar(GuiIngameForge.java:206)
+	at net.minecraftforge.client.GuiIngameForge.func_73830_a(GuiIngameForge.java:141)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1038)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['hadashiya'/3353182, l='MpServer', x=288.23, y=187.62, z=280.50]]
+	Chunk stats: MultiplayerChunkCache: 55, 55
+	Level seed: 0
+	Level generator: ID 03 - amplified, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (204,64,252), Chunk: (at 12,4,12 in 12,15; contains blocks 192,0,240 to 207,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 400743 game time, 53801 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 52 total; [EntityItem['item.item.egg'/3353139, l='MpServer', x=298.06, y=102.13, z=265.13], EntityChicken['Chicken'/3353138, l='MpServer', x=296.63, y=101.00, z=266.44], EntityClientPlayerMP['hadashiya'/3353182, l='MpServer', x=288.23, y=187.62, z=280.50], EntityChicken['Chicken'/3353137, l='MpServer', x=294.50, y=103.00, z=267.50], EntityItem['item.item.egg'/3353136, l='MpServer', x=302.88, y=80.13, z=269.94], EntityPainting['Painting'/3353121, l='MpServer', x=284.94, y=188.50, z=278.50], EntityPainting['Painting'/3353142, l='MpServer', x=288.00, y=188.50, z=272.06], EntityPainting['Painting'/3353122, l='MpServer', x=284.94, y=188.50, z=279.50], EntityChicken['Chicken'/3353141, l='MpServer', x=293.50, y=118.00, z=265.50], EntityChicken['Chicken'/3353140, l='MpServer', x=295.50, y=121.00, z=264.50], EntityChicken['Chicken'/3353151, l='MpServer', x=304.47, y=88.00, z=254.53], EntityItem['item.item.egg'/3353150, l='MpServer', x=309.13, y=86.13, z=253.63], EntityItem['item.item.egg'/3353149, l='MpServer', x=311.59, y=86.13, z=253.28], EntityChicken['Chicken'/3353148, l='MpServer', x=310.13, y=87.00, z=255.25], EntityOcelot['Cat'/3353123, l='MpServer', x=284.16, y=187.00, z=272.16], EntityPainting['Painting'/3353122, l='MpServer', x=284.94, y=188.50, z=279.50], EntityPainting['Painting'/3353121, l='MpServer', x=284.94, y=188.50, z=278.50], EntityOcelot['Cat'/3353120, l='MpServer', x=283.31, y=187.00, z=272.69], EntityChicken['Chicken'/3353127, l='MpServer', x=276.38, y=103.00, z=326.63], EntityChicken['Chicken'/3353126, l='MpServer', x=279.50, y=79.00, z=330.50], EntityChicken['Chicken'/3353125, l='MpServer', x=278.50, y=79.00, z=333.50], EntityChicken['Chicken'/3353124, l='MpServer', x=277.81, y=79.00, z=330.97], EntityHorse['Horse'/3353135, l='MpServer', x=294.06, y=116.00, z=247.44], EntityHorse['Horse'/3353134, l='MpServer', x=295.91, y=117.00, z=253.47], EntityHorse['Horse'/3353133, l='MpServer', x=297.81, y=117.00, z=251.50], EntityChicken['Chicken'/3353111, l='MpServer', x=270.50, y=104.00, z=234.50], EntitySlideDoor['entity.BambooMod.Syouzi.name'/3353109, l='MpServer', x=248.50, y=194.00, z=291.50], EntitySlideDoor['entity.BambooMod.Syouzi.name'/3353108, l='MpServer', x=247.50, y=194.00, z=291.50], EntityItem['item.item.egg'/3353115, l='MpServer', x=267.31, y=102.13, z=235.19], EntityItem['item.item.egg'/3353114, l='MpServer', x=265.78, y=103.13, z=231.59], EntityChicken['Chicken'/3353113, l='MpServer', x=270.47, y=109.00, z=231.75], EntityChicken['Chicken'/3353112, l='MpServer', x=269.50, y=104.00, z=234.50], EntityOcelot['Cat'/3353119, l='MpServer', x=287.16, y=187.00, z=272.16], EntityChicken['Chicken'/3353118, l='MpServer', x=280.31, y=164.00, z=268.31], EntityItem['item.item.egg'/3353117, l='MpServer', x=278.31, y=109.13, z=264.53], EntityChicken['Chicken'/3353116, l='MpServer', x=273.50, y=104.00, z=235.50], EntityChicken['Chicken'/3353171, l='MpServer', x=354.53, y=89.00, z=284.66], EntityChicken['Chicken'/3353174, l='MpServer', x=362.50, y=92.00, z=292.50], EntityChicken['Chicken'/3353173, l='MpServer', x=362.50, y=90.00, z=293.50], EntityChicken['Chicken'/3353172, l='MpServer', x=357.19, y=93.00, z=276.91], EntityChicken['Chicken'/3353155, l='MpServer', x=306.56, y=97.00, z=324.69], EntityChicken['Chicken'/3353154, l='MpServer', x=309.47, y=95.00, z=329.47], EntityChicken['Chicken'/3353153, l='MpServer', x=308.53, y=107.00, z=260.47], EntityPainting['Painting'/3353142, l='MpServer', x=288.00, y=188.50, z=272.06], EntityItem['item.item.egg'/3353152, l='MpServer', x=312.81, y=87.13, z=256.06], EntityChicken['Chicken'/3353159, l='MpServer', x=305.59, y=96.00, z=326.44], EntityChicken['Chicken'/3353158, l='MpServer', x=307.44, y=96.00, z=328.41], EntityChicken['Chicken'/3353157, l='MpServer', x=313.47, y=98.00, z=322.81], EntityChicken['Chicken'/3353156, l='MpServer', x=308.84, y=99.00, z=323.88], EntityChicken['Chicken'/3353162, l='MpServer', x=320.38, y=89.00, z=256.53], EntityChicken['Chicken'/3353161, l='MpServer', x=308.13, y=96.00, z=326.09], EntityChicken['Chicken'/3353160, l='MpServer', x=311.34, y=100.00, z=321.47]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 469461480 bytes (447 MB) / 850833408 bytes (811 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 6 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 12, tallocated: 94
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 19 mods loaded, 19 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	bambootransformer{1.0.0} [BambooTransformer] (minecraft.jar) 
+	UCHIJAAAAAAAAA	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAAAAAAA	OldModelLoader{1.0} [OldModelLoader] (minecraft.jar) 
+	UCHIJAAAAAAAAA	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-universal.jar) 
+	UCHIJAAAAAAAAA	BambooMod{Minecraft1.7.10 var2.6.8.3} [BambooMod] (Bamboo-2.6.8.3.jar) 
+	UCHIJAAAAAAAAA	net.minecraft.scalar.cutall.mod_CutAllSMP{2.4.9} [CutAllSMP] (CutAllSMP_v2.4.9.zip) 
+	UCHIJAAAAAAAAA	ExtrabiomesXL{3.16.3} [ExtrabiomesXL] (extrabiomesxl_1.7.10-3.16.3.jar) 
+	UCHIJAAAAAAAAA	inventorytweaks{1.58-147-645ca10} [Inventory Tweaks] (InventoryTweaks-1.58-147.jar) 
+	UCHIJAAAAAAAAA	lmmx{1.0} [lmmx] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	MMMLibX{1.7.x-srg-1} [MMMLibX] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	zabuton{1.0} [zabuton] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	LotMetaBlockMod{2.0.4} [LotMetaBlockMod] (LotMetaBlockMod-2.0.4-mc1.7.10.jar) 
+	UCHIJAAAAAAAAA	net.minecraft.scalar.mineall.mod_MineAllSMP{2.6.0} [MineAllSMP] (MineAllSMP_v2.6.0.zip) 
+	UCHIJAAAAAAAAA	ReiMinimap{1.7.10} [Rei's Minimap] (Reis-Minimap-Mod-1.7.10.jar) 
+	UCHIJAAAAAAAAA	spawnchecker{2.1.4.128} [SpawnChecker] (SpawnChecker-2.1.4.128.jar) 
+	UCHIJAAAAAAAAA	spawnchecker.presetmode{2.1.4.128} [SpawnChecker preset mode] (SpawnChecker-2.1.4.128.jar) 
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.13416 Compatibility Profile Context 15.300.1025.1001' Renderer: 'AMD Radeon HD 7800 Series'
+	Launched Version: 1.7.10-Forge10.13.4.1614-1.7.10
+	LWJGL: 2.9.1
+	OpenGL: AMD Radeon HD 7800 Series GL version 4.5.13416 Compatibility Profile Context 15.300.1025.1001, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [Halcyon Days v1.2 [1.6-1.7].zip]
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: On (2)
