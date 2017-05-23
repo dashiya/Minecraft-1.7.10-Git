@@ -1,9 +1,9 @@
 invertYMouse:false
-mouseSensitivity:0.7112676
+mouseSensitivity:0.49295774
 fov:0.0
 gamma:0.0
 saturation:0.0
-renderDistance:12
+renderDistance:10
 guiScale:0
 particles:0
 bobView:true
@@ -38,7 +38,7 @@ chatHeightFocused:1.0
 chatHeightUnfocused:0.44366196
 chatScale:1.0
 chatWidth:1.0
-showInventoryAchievementHint:true
+showInventoryAchievementHint:false
 mipmapLevels:4
 anisotropicFiltering:1
 streamBytesPerPixel:0.5
@@ -97,10 +97,10 @@ key_spawnchecker.key.up:200
 key_spawnchecker.key.down:208
 key_spawnchecker.key.plus:78
 key_spawnchecker.key.minus:74
-soundCategory_master:0.44701988
+soundCategory_master:0.51324505
 soundCategory_music:0.0
 soundCategory_record:1.0
-soundCategory_weather:0.5070422
+soundCategory_weather:0.0
 soundCategory_block:1.0
 soundCategory_hostile:1.0
 soundCategory_neutral:1.0

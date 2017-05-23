@@ -88,3 +88,48 @@
 [SMC FNT]    add shaders button
 [SMC FNT]    shaders button action
 [SMC FNE] 6481 (+158)
+[SMC INF]OpenGL Version : 4.5.0 NVIDIA 376.53
+[SMC INF]Vendor :  NVIDIA Corporation
+[SMC INF]Renderer : GeForce GTX 1050 Ti/PCIe/SSE2
+[SMC INF]Capabilities  2.0  2.1  3.0  3.2  4.0
+[SMC INF]GL_MAX_DRAW_BUFFERS = 8
+[SMC INF]GL_MAX_COLOR_ATTACHMENTS_EXT = 8
+[SMC INF]GL_MAX_TEXTURE_IMAGE_UNITS = 32
+[SMC INF]Program gbuffers_basic loaded
+[SMC INF]Program gbuffers_textured loaded
+[SMC INF]Program gbuffers_textured_lit loaded
+[SMC INF]Program gbuffers_skybasic loaded
+[SMC INF]Program gbuffers_skytextured loaded
+[SMC INF]Program gbuffers_terrain loaded
+[SMC INF]Program gbuffers_water loaded
+[SMC INF]Program gbuffers_entities loaded
+[SMC INF]Program gbuffers_hand loaded
+[SMC INF]Program gbuffers_weather loaded
+[SMC INF]Shadow map resolution: 2048
+[SMC INF]Shadow map distance: 100.0
+[SMC INF]Wetness halflife: 70.0f
+[SMC INF]Dryness halflife: 70.0f
+[SMC INF]shadowtex1Mipmap
+[SMC INF]shadowHardwareFiltering0
+[SMC INF]Shadow map interval size: 6.0f
+[SMC INF]Sun path rotation: -40.0f
+[SMC INF]Noise texture enabled
+[SMC INF]Noise texture resolution: 1024
+[SMC INF]Program composite loaded
+[SMC INF]Program composite1 loaded
+[SMC INF]Program composite2 loaded
+[SMC INF]Program final loaded
+[SMC INF]Program shadow loaded
+[SMC INF]Framebuffer created.
+[SMC INF]Shadow framebuffer created.
+[SMC INF]Reset model renderers
+[SMC INF]Reset world renderers
+[SMC INF].
+[SMC INF]Expand tesselator buffer 131072
+[SMC FNE]transforming bpr net.minecraft.client.renderer.ThreadDownloadImageData
+[SMC FNE] 4149 (+285)
+[SMC INF]Expand tesselator buffer 262144
+[SMC INF]Expand tesselator buffer 524288
+[SMC INF]Expand tesselator buffer 1048576
+[SMC INF]Expand tesselator buffer 2097152
+[SMC INF]Framebuffer created.
