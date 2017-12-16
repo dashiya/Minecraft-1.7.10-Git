@@ -90,7 +90,7 @@
 [SMC FNE] 6481 (+158)
 [SMC FNE]transforming bpr net.minecraft.client.renderer.ThreadDownloadImageData
 [SMC FNE] 4149 (+285)
-[SMC INF]OpenGL Version : 4.5.0 NVIDIA 382.05
+[SMC INF]OpenGL Version : 4.6.0 NVIDIA 388.13
 [SMC INF]Vendor :  NVIDIA Corporation
 [SMC INF]Renderer : GeForce GTX 1050 Ti/PCIe/SSE2
 [SMC INF]Capabilities  2.0  2.1  3.0  3.2  4.0
@@ -130,6 +130,6 @@
 [SMC INF]Expand tesselator buffer 131072
 [SMC INF]Expand tesselator buffer 262144
 [SMC INF]Expand tesselator buffer 524288
-[SMC INF]Framebuffer created.
 [SMC INF]Expand tesselator buffer 1048576
+[SMC INF]Framebuffer created.
 [SMC INF]Expand tesselator buffer 2097152

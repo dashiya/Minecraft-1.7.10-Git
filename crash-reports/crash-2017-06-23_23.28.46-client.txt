@@ -1,0 +1,142 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 17/06/23 23:28
+Description: Rendering item
+
+java.lang.ArrayIndexOutOfBoundsException: 9
+	at extrabiomes.blocks.BlockCustomFence.func_149691_a(BlockCustomFence.java:85)
+	at extrabiomes.items.ItemCustomFence.func_77617_a(ItemCustomFence.java:36)
+	at net.minecraft.item.Item.func_77650_f(Item.java:440)
+	at net.minecraft.item.ItemStack.func_77954_c(ItemStack.java:117)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:403)
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:565)
+	at net.minecraft.client.gui.GuiIngame.func_73832_a(GuiIngame.java:955)
+	at net.minecraftforge.client.GuiIngameForge.renderHotbar(GuiIngameForge.java:206)
+	at net.minecraftforge.client.GuiIngameForge.func_73830_a(GuiIngameForge.java:141)
+	at net.minecraft.client.renderer.EntityRenderer.func_78480_b(EntityRenderer.java:1038)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1001)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:898)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at extrabiomes.blocks.BlockCustomFence.func_149691_a(BlockCustomFence.java:85)
+	at extrabiomes.items.ItemCustomFence.func_77617_a(ItemCustomFence.java:36)
+	at net.minecraft.item.Item.func_77650_f(Item.java:440)
+	at net.minecraft.item.ItemStack.func_77954_c(ItemStack.java:117)
+	at net.minecraft.client.renderer.entity.RenderItem.renderItemIntoGUI(RenderItem.java:403)
+
+-- Item being rendered --
+Details:
+	Item Type: extrabiomes.items.ItemCustomFence@26cfdc15
+	Item Aux: 9
+	Item NBT: null
+	Item Foil: false
+Stacktrace:
+	at net.minecraft.client.renderer.entity.RenderItem.func_82406_b(RenderItem.java:565)
+	at net.minecraft.client.gui.GuiIngame.func_73832_a(GuiIngame.java:955)
+	at net.minecraftforge.client.GuiIngameForge.renderHotbar(GuiIngameForge.java:206)
+	at net.minecraftforge.client.GuiIngameForge.func_73830_a(GuiIngameForge.java:141)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['hadashiya'/2242272, l='MpServer', x=288.23, y=187.62, z=280.50]]
+	Chunk stats: MultiplayerChunkCache: 70, 70
+	Level seed: 0
+	Level generator: ID 03 - amplified, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (204,64,252), Chunk: (at 12,4,12 in 12,15; contains blocks 192,0,240 to 207,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 400865 game time, 53923 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 80 total; [EntityOcelot['Cat'/2242210, l='MpServer', x=283.31, y=187.00, z=272.69], MoCEntityDragonfly['DragonFly'/2242466, l='MpServer', x=287.50, y=163.00, z=266.50], EntityPainting['Painting'/2242211, l='MpServer', x=284.94, y=188.50, z=278.50], EntityChicken['Chicken'/2242208, l='MpServer', x=280.31, y=164.00, z=268.31], EntityOcelot['Cat'/2242209, l='MpServer', x=287.16, y=187.00, z=272.16], EntityChicken['Chicken'/2242214, l='MpServer', x=277.94, y=79.00, z=332.13], EntityChicken['Chicken'/2242215, l='MpServer', x=279.78, y=79.00, z=331.63], EntityPainting['Painting'/2242212, l='MpServer', x=284.94, y=188.50, z=279.50], EntityOcelot['Cat'/2242213, l='MpServer', x=284.16, y=187.00, z=272.16], EntityHorse['Horse'/2242218, l='MpServer', x=273.63, y=79.00, z=350.19], EntityChicken['Chicken'/2242219, l='MpServer', x=284.50, y=80.00, z=345.50], EntityChicken['Chicken'/2242216, l='MpServer', x=280.34, y=79.00, z=330.38], EntityChicken['Chicken'/2242217, l='MpServer', x=276.38, y=103.00, z=326.63], EntityHorse['Horse'/2242222, l='MpServer', x=278.91, y=80.00, z=339.66], EntityPainting['Painting'/2242211, l='MpServer', x=284.94, y=188.50, z=278.50], EntityHorse['Horse'/2242223, l='MpServer', x=299.91, y=116.00, z=248.56], EntityChicken['Chicken'/2242220, l='MpServer', x=286.50, y=80.00, z=347.50], EntityPainting['Painting'/2242232, l='MpServer', x=288.00, y=188.50, z=272.06], EntityChicken['Chicken'/2242221, l='MpServer', x=285.50, y=80.00, z=347.50], EntityItem['item.item.egg'/2242226, l='MpServer', x=302.88, y=80.13, z=269.94], EntityChicken['Chicken'/2242227, l='MpServer', x=294.50, y=103.00, z=267.50], EntityHorse['Horse'/2242224, l='MpServer', x=298.47, y=116.00, z=254.44], EntityPainting['Painting'/2242212, l='MpServer', x=284.94, y=188.50, z=279.50], EntityHorse['Horse'/2242225, l='MpServer', x=294.06, y=116.00, z=247.44], EntityChicken['Chicken'/2242230, l='MpServer', x=295.50, y=121.00, z=264.50], EntityChicken['Chicken'/2242231, l='MpServer', x=293.50, y=118.00, z=265.50], EntityChicken['Chicken'/2242228, l='MpServer', x=296.63, y=101.00, z=266.44], EntityItem['item.item.egg'/2242229, l='MpServer', x=298.06, y=102.13, z=265.13], EntityPainting['Painting'/2242232, l='MpServer', x=288.00, y=188.50, z=272.06], EntityChicken['Chicken'/2242233, l='MpServer', x=288.50, y=80.00, z=347.50], EntityChicken['Chicken'/2242238, l='MpServer', x=310.13, y=87.00, z=255.25], EntityItem['item.item.egg'/2242239, l='MpServer', x=311.59, y=86.13, z=253.28], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242186, l='MpServer', x=229.50, y=200.50, z=265.44], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242187, l='MpServer', x=232.47, y=200.50, z=266.50], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242184, l='MpServer', x=232.50, y=200.50, z=265.44], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242185, l='MpServer', x=229.41, y=200.50, z=266.44], EntityChicken['Chicken'/2242190, l='MpServer', x=229.72, y=78.00, z=319.66], MoCEntityCricket['Cricket'/2242447, l='MpServer', x=256.50, y=190.00, z=284.50], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242188, l='MpServer', x=230.50, y=200.50, z=265.50], VZN_EntityZabuton['entity.zabuton.zabuton.name'/2242189, l='MpServer', x=237.38, y=194.00, z=264.22], MoCEntityMaggot['Maggot'/2242451, l='MpServer', x=313.50, y=114.00, z=310.50], MoCEntityCricket['Cricket'/2242448, l='MpServer', x=254.50, y=190.00, z=282.50], EntitySlideDoor['entity.BambooMod.Syouzi.name'/2242198, l='MpServer', x=247.50, y=194.00, z=291.50], EntitySlideDoor['entity.BambooMod.Syouzi.name'/2242199, l='MpServer', x=248.50, y=194.00, z=291.50], EntityChicken['Chicken'/2242202, l='MpServer', x=269.50, y=104.00, z=234.50], EntityChicken['Chicken'/2242203, l='MpServer', x=269.75, y=108.00, z=231.53], EntityChicken['Chicken'/2242201, l='MpServer', x=270.50, y=104.00, z=234.50], EntityClientPlayerMP['hadashiya'/2242272, l='MpServer', x=288.23, y=187.62, z=280.50], EntityChicken['Chicken'/2242206, l='MpServer', x=273.50, y=104.00, z=235.50], EntityItem['item.item.egg'/2242207, l='MpServer', x=278.31, y=109.13, z=264.53], EntityItem['item.item.egg'/2242204, l='MpServer', x=265.78, y=103.13, z=231.59], EntityItem['item.item.egg'/2242205, l='MpServer', x=267.31, y=102.13, z=235.19], MoCEntitySnail['Snail'/2242279, l='MpServer', x=269.50, y=191.00, z=298.50], MoCEntityFly['Fly'/2242277, l='MpServer', x=302.50, y=101.00, z=261.50], MoCEntityDragonfly['DragonFly'/2242282, l='MpServer', x=271.47, y=191.00, z=301.47], MoCEntityDragonfly['DragonFly'/2242283, l='MpServer', x=269.50, y=191.00, z=297.50], MoCEntitySnail['Snail'/2242280, l='MpServer', x=266.50, y=191.00, z=296.50], MoCEntitySnail['Snail'/2242281, l='MpServer', x=265.50, y=191.00, z=295.50], MoCEntityDragonfly['DragonFly'/2242284, l='MpServer', x=269.50, y=191.00, z=299.50], MoCEntityDragonfly['DragonFly'/2242285, l='MpServer', x=268.50, y=191.00, z=299.50], EntityItem['item.item.egg'/2242242, l='MpServer', x=312.81, y=87.13, z=256.06], EntityChicken['Chicken'/2242243, l='MpServer', x=308.47, y=106.00, z=261.72], EntityItem['item.item.egg'/2242240, l='MpServer', x=309.13, y=86.13, z=253.63], EntityChicken['Chicken'/2242241, l='MpServer', x=305.38, y=87.00, z=254.53], EntityChicken['Chicken'/2242246, l='MpServer', x=308.56, y=99.00, z=323.41], EntityChicken['Chicken'/2242247, l='MpServer', x=313.47, y=98.00, z=322.81], EntityChicken['Chicken'/2242244, l='MpServer', x=309.47, y=95.00, z=329.47], EntityChicken['Chicken'/2242245, l='MpServer', x=306.56, y=97.00, z=324.69], EntityChicken['Chicken'/2242250, l='MpServer', x=314.47, y=96.00, z=327.47], EntityChicken['Chicken'/2242251, l='MpServer', x=315.56, y=96.00, z=330.44], EntityChicken['Chicken'/2242248, l='MpServer', x=305.59, y=96.00, z=326.44], EntityChicken['Chicken'/2242249, l='MpServer', x=311.34, y=100.00, z=321.47], EntityPig['Pig'/2242254, l='MpServer', x=347.50, y=84.00, z=349.13], EntityPig['Pig'/2242255, l='MpServer', x=346.47, y=88.00, z=348.03], EntityChicken['Chicken'/2242252, l='MpServer', x=320.38, y=89.00, z=256.53], EntityPig['Pig'/2242253, l='MpServer', x=346.50, y=93.00, z=345.75], EntityChicken['Chicken'/2242262, l='MpServer', x=357.19, y=93.00, z=276.91], EntityChicken['Chicken'/2242263, l='MpServer', x=362.50, y=90.00, z=293.50], EntityChicken['Chicken'/2242261, l='MpServer', x=354.53, y=89.00, z=284.66], EntityChicken['Chicken'/2242264, l='MpServer', x=362.50, y=92.00, z=292.50]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:373)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2444)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:919)
+	at net.minecraft.client.main.Main.main(SourceFile:148)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_25, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 466605496 bytes (444 MB) / 888270848 bytes (847 MB) up to 1060372480 bytes (1011 MB)
+	JVM Flags: 6 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx1G -XX:+UseConcMarkSweepGC -XX:+CMSIncrementalMode -XX:-UseAdaptiveSizePolicy -Xmn128M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 33 mods loaded, 33 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAAAA	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	bambootransformer{1.0.0} [BambooTransformer] (minecraft.jar) 
+	UCHIJAAAAAAAAA	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAAAAAAA	OldModelLoader{1.0} [OldModelLoader] (minecraft.jar) 
+	UCHIJAAAAAAAAA	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-universal.jar) 
+	UCHIJAAAAAAAAA	ateliercanvas{0.2.0} [Atelier Canvas] (AtelierCanvas[1.7.10]-0.2.0.jar) 
+	UCHIJAAAAAAAAA	BambooMod{Minecraft1.7.10 var2.6.8.3} [BambooMod] (Bamboo-2.6.8.3.jar) 
+	UCHIJAAAAAAAAA	customnpcs{1.7.10d} [CustomNpcs] (CustomNPCs_1.7.10d(21feb16).jar) 
+	UCHIJAAAAAAAAA	net.minecraft.scalar.cutall.mod_CutAllSMP{2.4.9} [CutAllSMP] (CutAllSMP_v2.4.9.zip) 
+	UCHIJAAAAAAAAA	MoCreatures{6.3.1} [DrZhark's Mo'Creatures Mod] (DrZharks MoCreatures Mod v6.3.1.zip) 
+	UCHIJAAAAAAAAA	ExtrabiomesXL{3.16.3} [ExtrabiomesXL] (extrabiomesxl_1.7.10-3.16.3.jar) 
+	UCHIJAAAAAAAAA	Growthcraft{2.1.0a} [Growthcraft] (growthcraft-core-1.7.10-2.1.0a.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Cellar{2.1.0a} [Growthcraft Cellar] (growthcraft-cellar-1.7.10-2.1.0a.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Apples{2.1.0} [Growthcraft Apples] (growthcraft-apples-1.7.10-2.1.0.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Bamboo{2.1.0} [Growthcraft Bamboo] (growthcraft-bamboo-1.7.10-2.1.0.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Bees{2.1.0} [Growthcraft Bees] (growthcraft-bees-1.7.10-2.1.0.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Fishtrap{2.1.0a} [Growthcraft Fishtrap] (growthcraft-fishtrap-1.7.10-2.1.0a.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Grapes{2.1.0} [Growthcraft Grapes] (growthcraft-grapes-1.7.10-2.1.0.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Hops{2.1.0} [Growthcraft Hops] (growthcraft-hops-1.7.10-2.1.0.jar) 
+	UCHIJAAAAAAAAA	Growthcraft|Rice{2.1.0a} [Growthcraft Rice] (growthcraft-rice-1.7.10-2.1.0a.jar) 
+	UCHIJAAAAAAAAA	inventorytweaks{1.58-147-645ca10} [Inventory Tweaks] (InventoryTweaks-1.58-147.jar) 
+	UCHIJAAAAAAAAA	lmmx{1.0} [lmmx] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	MMMLibX{1.7.x-srg-1} [MMMLibX] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	zabuton{1.0} [zabuton] (littleMaidMobX-1.7.x_0.0.9.jar) 
+	UCHIJAAAAAAAAA	LotMetaBlockMod{2.0.4} [LotMetaBlockMod] (LotMetaBlockMod-2.0.4-mc1.7.10.jar) 
+	UCHIJAAAAAAAAA	MaidWhistle{1.7.10} [MaidWhistle] (MaidWhistle-1.7.10_0.2.jar) 
+	UCHIJAAAAAAAAA	net.minecraft.scalar.mineall.mod_MineAllSMP{2.6.0} [MineAllSMP] (MineAllSMP_v2.6.0.zip) 
+	UCHIJAAAAAAAAA	ReiMinimap{1.7.10} [Rei's Minimap] (Reis-Minimap-Mod-1.7.10.jar) 
+	UCHIJAAAAAAAAA	spawnchecker{2.1.4.128} [SpawnChecker] (SpawnChecker-2.1.4.128.jar) 
+	UCHIJAAAAAAAAA	spawnchecker.presetmode{2.1.4.128} [SpawnChecker preset mode] (SpawnChecker-2.1.4.128.jar) 
+	UCHIJAAAAAAAAA	tc{4.3.2_009} [Traincraft] (Traincraft-4.3.2_009.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 382.05' Renderer: 'GeForce GTX 1050 Ti/PCIe/SSE2'
+	Launched Version: 1.7.10-Forge10.13.4.1614-1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 1050 Ti/PCIe/SSE2 GL version 4.5.0 NVIDIA 382.05, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: [Halcyon Days v1.2 [1.6-1.7].zip]
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

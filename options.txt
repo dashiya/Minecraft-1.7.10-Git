@@ -92,12 +92,18 @@ key_[LotMeta] Meta Pick:33
 key_[LotMeta] Meta Change:21
 key_[LotMeta] Meta Remove:46
 key_[LotMeta] Direct Meta Change:45
+key_key.traincraft.horn:35
+key_key.traincraft.inventory:19
+key_key.traincraft.up:21
+key_key.traincraft.down:45
+key_key.traincraft.idle:46
+key_key.traincraft.furnace:33
 key_invtweaks.key.sort:19
 key_spawnchecker.key.up:200
 key_spawnchecker.key.down:208
 key_spawnchecker.key.plus:78
 key_spawnchecker.key.minus:74
-soundCategory_master:0.51324505
+soundCategory_master:0.705298
 soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:0.0
